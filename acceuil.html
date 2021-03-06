@@ -1,76 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="charteGraphique.css" />
 </head>
-<body style="background-image:url(https://media-public.canva.com/MADGvrMh6-w/7/screen_2x.jpg);background-repeat: no-repeat;background-size: cover;   color: white;">
-<center><h1> Laugh</h1></center>
-<br>
-<br>
-<form action="" method="post">
-  <!-- Langue -->
-    <h3 style="margin-left:15%;" ><u  style="margin-right:1em;"><b>Langue:</b></u>
 
 
-<!-- Catégorie -->
-<u  style="margin-left:20%;"><b>Catégorie:</b></u>
+  <header>
+    <div class="enteteG" id="titre">Laugh</div>
+    <div class="text-alignC">
+      <form method='POST' action='accueil.html'><!-- Bouton vers la pageprincipale du site -->
+        <div class="enteteC bold">
+          <img src='  https://pnommensen.com/images/cry-laugh-emoji-transparent-7.png' class="recadrageImg" id="position">
+          <input class="enteteD" type='submit' value='Blague'>
+        </div>
+      </div>
+    </form>
+  </header>
+  <body>
+  <br>
 
+  <br>
+  <form action="" method="post">
+    <!-- Langue -->
+    <h3 class="ml-15" ><u  class="mr-01"><b>Langue:</b></u>
+      <!-- Catégorie -->
+      <u class="ml-20"><b>Catégorie:</b></u>
+      <!-- Mots dans la blague : -->
+      <u  class="ml-20"><b>Mots dans la blague :</b></u>
 
-<!-- Mots dans la blague : -->
-<u  style="margin-left:20%;"><b>Mots dans la blague :</b></u>
+    </h3>
+    <h3 class="ml-15">
+      <!-- Liste Déroulante -->
+      <select name="pets" id="pet-select" class="Couleur borders" >
+        <option value="">--Anglais--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Hamster</option>
+        <option value="parrot">Parrot</option>
+        <option value="spider">Spider</option>
+        <option value="goldfish">Goldfish</option>
+      </select>
+      <!-- Liste Déroulante -->
+      <select name="pets" id="pet-select" class="Couleur borders ml-18" >
+        <option value="">--Toute--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Hamster</option>
+        <option value="parrot">Parrot</option>
+        <option value="spider">Spider</option>
+        <option value="goldfish">Goldfish</option>
+      </select>
+      <!-- texte -->
+      <input type="text" class="Couleur borders ml-20"  name="" value="" placeholder="exemple : cow">
+    </h3>
+    <br>
+    <br>
+    <h3 class="ml-30">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input recadrageCase" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">Une Phrase</label>
+      </div>
+      <div class="form-check form-check-inline ml-30" >
+        <input class="form-check-input recadrageCase" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">Deux Phrases</label>
+      </div> 
+    </h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3 >
+      <center>
+        <input type="submit" name="" class="borders Couleur" value="RandomJoke">
+      </center>
+    </h3>
 
-</h3>
-<h3 style="margin-left:15%;"">
-<!-- Liste Déroulante -->
-<select name="pets" id="pet-select" style="background-color: Black;color:white;border:solid;">
-    <option value="">--Anglais--</option>
-    <option value="dog">Dog</option>
-    <option value="cat">Cat</option>
-    <option value="hamster">Hamster</option>
-    <option value="parrot">Parrot</option>
-    <option value="spider">Spider</option>
-    <option value="goldfish">Goldfish</option>
-    </select>
-    <!-- Liste Déroulante -->
-    <select name="pets" id="pet-select" style="background-color: Black; color:white; margin-left:18%;border:solid; ">
-    <option value="">--Toute--</option>
-    <option value="dog">Dog</option>
-    <option value="cat">Cat</option>
-    <option value="hamster">Hamster</option>
-    <option value="parrot">Parrot</option>
-    <option value="spider">Spider</option>
-    <option value="goldfish">Goldfish</option>
-</select>
-<!-- texte -->
-<input type="text" style="background-color: Black; color:white;color:white;margin-left:20%;border:solid;" name="" value="" placeholder="exemple : cow">
-</h3>
-<br>
-<br>
-<h3 style="margin-left:30%;">
-  <div class="form-check form-check-inline" >
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" style="width: 35px;height: 35px;">
-    <label class="form-check-label" for="inlineRadio1"> Une Phrase</label>
-  </div>
-  <div class="form-check form-check-inline" style="margin-left:30%;">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1"style="width: 35px;height: 35px;">
-  <label class="form-check-label" for="inlineRadio1"> Deux Phrases</label>
-</div>
-</h3>
-<br>
-<br>
-<br>
-<br>
-<h3 >
-  <center>
-<input type="submit" name="" value="RandomJoke"style="background-color: Black;color:white;border:solid">
-</center>
-</h3>
-
-</form>
+  </form>
 
 </body>
 </html>
