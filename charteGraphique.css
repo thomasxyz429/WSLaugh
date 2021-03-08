@@ -68,7 +68,7 @@ body {
 	height: 35px;
 }
 .linear-gradient {
-  background: linear-gradient( 70deg, red, yellow);
+  background: linear-gradient( 70deg, #e63c3c, #ede85a);
 }
 
 .orange {
