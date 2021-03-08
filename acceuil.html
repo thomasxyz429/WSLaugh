@@ -7,6 +7,26 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="charteGraphique.css" />
+
+  <script type="text/javascript">
+  function estCocher() {
+    estCoche=false;
+    if (document.getElementById("inlineCheckbox1").checked==true ||document.getElementById("inlineCheckbox2").checked==true) {
+      estCoche=true;
+    }
+    return estCoche;
+  }
+
+  function validerForm() {
+    if(estCocher){
+      document.forms["formBlague"].submit();
+    }
+    else
+    {
+      alert("Vous n'avez pas choisie le type de blague voulue (une phrase/ deux phrases)");
+    }
+  }
+</script>
 </head>
 
 
@@ -25,7 +45,7 @@
   <br>
 
   <br>
-  <form action="" method="post">
+  <form action="page1.html" name="formBlague" method="post" onsubmit=" return estCocher()">
     <!-- Langue -->
     <h3 class="ml-15" ><u  class="mr-01"><b>Langue:</b></u>
       <!-- Catégorie -->
@@ -36,24 +56,22 @@
     </h3>
     <h3 class="ml-15">
       <!-- Liste Déroulante -->
-      <select name="pets" id="pet-select" class="Couleur borders" >
-        <option value="">--Anglais--</option>
-        <option value="dog">Dog</option>
-        <option value="cat">Cat</option>
-        <option value="hamster">Hamster</option>
-        <option value="parrot">Parrot</option>
-        <option value="spider">Spider</option>
-        <option value="goldfish">Goldfish</option>
+      <select name="pets" id="langueChoice" class="Couleur borders" >
+        <option value="Anglais">--Anglais--</option>
+        <option value="Francais">Francais</option>
+        <option value="Espanol">Espanol</option>
+        <option value="Polonais">Polonais</option>
+        <option value="Russe">Russe</option>
       </select>
       <!-- Liste Déroulante -->
-      <select name="pets" id="pet-select" class="Couleur borders ml-18" >
-        <option value="">--Toute--</option>
-        <option value="dog">Dog</option>
-        <option value="cat">Cat</option>
-        <option value="hamster">Hamster</option>
-        <option value="parrot">Parrot</option>
-        <option value="spider">Spider</option>
-        <option value="goldfish">Goldfish</option>
+      <select name="pets" id="Categorie" class="Couleur borders ml-18" >
+        <option value="all">--Toute--</option>
+        <option value="Programming">info</option>
+        <option value="Misc">divers</option>
+        <option value="Dark">sombre</option>
+        <option value="Pun">même</option>
+        <option value="Spooky">sinistre</option>
+        <option value="Christmas">Noel</option>
       </select>
       <!-- texte -->
       <input type="text" class="Couleur borders ml-20"  name="" value="" placeholder="exemple : cow">
@@ -76,7 +94,7 @@
     <br>
     <h3 >
       <center>
-        <input type="submit" name="" class="borders Couleur" value="RandomJoke">
+        <input type="submit" name="RandomJoke" class="borders Couleur" value="RandomJoke" >
       </center>
     </h3>
 
