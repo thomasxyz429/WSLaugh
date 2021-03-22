@@ -1,0 +1,56 @@
+{
+    "error": false,
+    "amount": 3,
+    "jokes": [
+        {
+            "category": "Programming",
+            "type": "twopart",
+            "setup": "What is a dying programmer's last program?",
+            "delivery": "Goodbye, world!",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 56,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Misc",
+            "type": "single",
+            "joke": "Stop being homophobic and rude to the LGBTQ+ community. You should be thanking them for saving us plenty of room in heaven.",
+            "flags": {
+                "nsfw": false,
+                "religious": true,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 114,
+            "safe": false,
+            "lang": "en"
+        },
+        {
+            "category": "Dark",
+            "type": "twopart",
+            "setup": "What do you call a kid with no arms and an eyepatch?",
+            "delivery": "Names.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 119,
+            "safe": false,
+            "lang": "en"
+        }
+    ]
+}

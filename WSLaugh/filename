@@ -1,0 +1,18 @@
+{
+    "error": false,
+    "category": "Pun",
+    "type": "twopart",
+    "setup": "Why did the chicken cross the road, roll in the mud and cross the road again?",
+    "delivery": "He was a dirty double-crosser!",
+    "flags": {
+        "nsfw": false,
+        "religious": false,
+        "political": false,
+        "racist": false,
+        "sexist": false,
+        "explicit": false
+    },
+    "id": 209,
+    "safe": true,
+    "lang": "en"
+}

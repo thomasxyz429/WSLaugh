@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="charteGraphique.css" />
+
+  <script type="text/javascript">
+    function estCocher() {
+      estCoche=false;
+      if (document.getElementById("inlineCheckbox1").checked==true ||document.getElementById("inlineCheckbox2").checked==true) {
+        estCoche=true;
+      }
+      return estCoche;
+    }
+
+    function validerForm() {
+      if(estCocher){
+        document.forms["formBlague"].submit();
+      }
+      else
+      {
+        alert("Vous n'avez pas choisie le type de blague voulue (une phrase/ deux phrases)");
+      }
+    }
+  </script>
+</head>
+
+
+<header>
+  <div class="enteteG" id="titre">Laugh</div>
+  <div class="text-alignC">
+    <form method='POST' action='page2.html'><!-- Bouton vers la pageprincipale du site -->
+      <div class="enteteC bold">
+        <img src='  https://pnommensen.com/images/cry-laugh-emoji-transparent-7.png' class="recadrageImg" id="position">
+        <input class="enteteD" type='submit' value='Blague'>
+      </div>
+    </div>
+  </form>
+</header>
+<body>
+  <br>
+
+  <br>
+  <form action="voirBlague.php" name="formBlague" method="post" onsubmit=" return estCocher()">
+    <!-- Langue -->
+    <h3 class="ml-15" ><u  class="mr-01"><b>Langue:</b></u>
+      <!-- Catégorie -->
+      <u class="ml-20"><b>Catégorie:</b></u>
+      <!-- Mots dans la blague : -->
+      <u  class="ml-20"><b>Mots dans la blague :</b></u>
+
+    </h3>
+    <h3 class="ml-15">
+      <!-- Liste Déroulante -->
+      <select name="langue" id="langueChoice" class="Couleur borders" >
+        <option value="Anglais">--Anglais--</option>
+        <option value="fr">Francais</option>
+        <option value="es">Espanol</option>
+        <option value="pl">Polonais</option>
+        <option value="ru">Russe</option>
+        <option value="de">Allemand</option>
+      </select>
+      <!-- Liste Déroulante -->
+      <select name="categorie" id="Categorie" class="Couleur borders ml-18" >
+        <option value="Any">--Toute--</option>
+        <option value="Programming">info</option>
+        <option value="Misc">divers</option>
+        <option value="Dark">sombre</option>
+        <option value="Pun">même</option>
+        <option value="Spooky">sinistre</option>
+        <option value="Christmas">Noel</option>
+      </select>
+      <!-- texte -->
+      <input type="text" class="Couleur borders ml-20"  name="motCible" value="" placeholder="exemple : cow">
+    </h3>
+    <br>
+    <br>
+    <h3 class="ml-30">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input recadrageCase" name="case1" type="checkbox" id="inlineCheckbox1" value="activer">
+        <label class="form-check-label" for="inlineCheckbox1">Une Phrase</label>
+      </div>
+      <div class="form-check form-check-inline ml-30" >
+        <input class="form-check-input recadrageCase" type="checkbox" name="case2" id="inlineCheckbox2" value="activer">
+        <label class="form-check-label" for="inlineCheckbox2">Deux Phrases</label>
+      </div> 
+    </h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3 >
+      <center>
+        <input type="submit" name="RandomJoke" class="borders Couleur" value="RandomJoke" >
+      </center>
+    </h3>
+
+  </form>
+
+</body>
+</html>
